@@ -85,11 +85,11 @@ public:
             delete tabs[index];
             tabs.erase(tabs.begin() + index);
         }
-        if(tabs.empty()){
-            close_browser();
-        }
         else {
             cout << "ERRROR: Invalid tab index" << endl;
+        }
+        if(tabs.empty()){
+            close_browser();
         }
     }
 
