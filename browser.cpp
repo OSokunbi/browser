@@ -75,9 +75,9 @@ public:
         this->open_tab(tabs.size() - 1);
     }
 
-    int close_browser(){
+    void close_browser(){
         cerr << "Browser Closed" << endl;
-        return 1;
+        std::exit(1);
     }
 
     void close_tab(int index){
