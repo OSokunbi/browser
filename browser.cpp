@@ -47,12 +47,7 @@ public:
         return os;
     }
     ~Tab() {
-        Website* current = curr;
-        while (current != nullptr) {
-            Website* temp = current;
-            current = current->next;
-            delete temp;
-        }
+
     }
 };
 
