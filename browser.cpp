@@ -89,7 +89,7 @@ public:
             cout << "ERRROR: Invalid tab index" << endl;
         }
         if(tabs.empty()){
-            close_browser();
+            this->close_browser();
         }
     }
 
@@ -101,10 +101,10 @@ public:
             cout << "\nType 'visit to visit a new link in the tab" << endl;
             string input;
             cin >> input;
-            if(input == "close") close_tab(index);
+            if(input == "close") this->close_tab(index);
             while(input != "close"){
                 if(input == "add"){
-                    add_tab();
+                    this->add_tab();
                 }
                 else if(input == "open"){
                     cout << *this;
@@ -112,7 +112,7 @@ public:
                     cout << "Enter index of tab to open: ";
                     cin >> index;
                     cout << endl;
-                    open_tab(index);
+                    this->open_tab(index);
                     cout << "Enter command: ";
                     cin >> input;
                 }
